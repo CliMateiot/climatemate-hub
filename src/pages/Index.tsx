@@ -119,7 +119,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA Section - Removed "Request Demo" button */}
       <section className="py-24 bg-primary text-white">
         <div className="container px-4 mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Business with CliMate?</h2>
@@ -127,9 +127,6 @@ const Index = () => {
             Contact our team today to learn how CliMate's IoT solutions can help your business thrive in the digital age.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90 shadow-lg">
-              Request Demo
-            </Button>
             <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
               Contact Us
             </Button>
@@ -226,15 +223,15 @@ const Index = () => {
         </div>
       </section>
 
-      {/* New Startup Section - Replacing Statistics */}
+      {/* New Vision Section - Replacing previous Startup Section */}
       <section className="py-24 bg-gradient-to-r from-gray-50 to-white">
         <div className="container px-4 mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="text-primary font-semibold tracking-wider uppercase text-sm mb-2 block">Why Choose CliMate</span>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Innovating at the Edge of IoT Technology</h2>
+              <span className="text-primary font-semibold tracking-wider uppercase text-sm mb-2 block">Our Vision</span>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Pioneering Innovation in IoT Technology</h2>
               <p className="text-muted-foreground mb-6">
-                As a pioneering startup in the IoT space, CliMate brings fresh perspectives and innovative solutions to complex business challenges. Our team of experts combines deep technical knowledge with creative problem-solving to deliver IoT systems that truly transform operations.
+                CliMate is on a mission to revolutionize how businesses interact with connected devices. We're building the next generation of IoT solutions that are accessible, powerful, and built with purpose.
               </p>
               
               <div className="space-y-4">
@@ -243,7 +240,7 @@ const Index = () => {
                     <div className="h-3 w-3 bg-primary rounded-full"></div>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    <span className="font-medium text-foreground">Rapid Deployment:</span> Our modular approach allows for quick implementation and validation
+                    <span className="font-medium text-foreground">Focused Innovation:</span> Dedicated to creating solutions that solve real-world problems
                   </p>
                 </div>
                 
@@ -252,7 +249,7 @@ const Index = () => {
                     <div className="h-3 w-3 bg-primary rounded-full"></div>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    <span className="font-medium text-foreground">Cost-Effective Solutions:</span> Designed with startups and SMEs in mind
+                    <span className="font-medium text-foreground">Future-Ready Platform:</span> Built with scalability and adaptability at its core
                   </p>
                 </div>
                 
@@ -261,7 +258,7 @@ const Index = () => {
                     <div className="h-3 w-3 bg-primary rounded-full"></div>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    <span className="font-medium text-foreground">Scalable Architecture:</span> Grows with your business from MVP to enterprise solution
+                    <span className="font-medium text-foreground">Strategic Partnerships:</span> Collaborating with industry leaders to expand capabilities
                   </p>
                 </div>
                 
@@ -270,57 +267,57 @@ const Index = () => {
                     <div className="h-3 w-3 bg-primary rounded-full"></div>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    <span className="font-medium text-foreground">Dedicated Support Team:</span> Personalized customer service throughout your IoT journey
+                    <span className="font-medium text-foreground">Sustainable Technology:</span> Creating IoT solutions with minimal environmental impact
                   </p>
                 </div>
               </div>
               
               <Button className="mt-8 group" asChild>
                 <a href="/about">
-                  Learn About Our Team <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  Learn More About Our Vision <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </a>
               </Button>
             </div>
             
             <div className="relative">
               <div className="bg-primary/5 rounded-2xl p-6 md:p-8 relative z-10">
-                <h3 className="text-xl font-semibold mb-6">Our Startup Journey</h3>
+                <h3 className="text-xl font-semibold mb-6">How We're Growing</h3>
                 <div className="space-y-8">
                   <div className="flex">
                     <div className="flex-shrink-0 w-16 text-center">
                       <div className="h-10 w-10 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
-                        <span className="font-semibold">2021</span>
+                        <span className="font-semibold">1</span>
                       </div>
                       <div className="h-full w-0.5 bg-primary/20 mx-auto mt-2"></div>
                     </div>
                     <div className="ml-4">
-                      <h4 className="font-medium">Founded in Silicon Valley</h4>
-                      <p className="text-sm text-muted-foreground mt-1">CliMate was established by a team of IoT enthusiasts and industry veterans</p>
+                      <h4 className="font-medium">Research & Development</h4>
+                      <p className="text-sm text-muted-foreground mt-1">Investing in cutting-edge research to develop innovative IoT solutions</p>
                     </div>
                   </div>
                   
                   <div className="flex">
                     <div className="flex-shrink-0 w-16 text-center">
                       <div className="h-10 w-10 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
-                        <span className="font-semibold">2022</span>
+                        <span className="font-semibold">2</span>
                       </div>
                       <div className="h-full w-0.5 bg-primary/20 mx-auto mt-2"></div>
                     </div>
                     <div className="ml-4">
-                      <h4 className="font-medium">First Major Client</h4>
-                      <p className="text-sm text-muted-foreground mt-1">Successfully deployed our IoT solution for a leading manufacturing company</p>
+                      <h4 className="font-medium">Platform Development</h4>
+                      <p className="text-sm text-muted-foreground mt-1">Building a scalable, secure platform for IoT device management and analytics</p>
                     </div>
                   </div>
                   
                   <div className="flex">
                     <div className="flex-shrink-0 w-16 text-center">
                       <div className="h-10 w-10 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
-                        <span className="font-semibold">2023</span>
+                        <span className="font-semibold">3</span>
                       </div>
                     </div>
                     <div className="ml-4">
-                      <h4 className="font-medium">Series A Funding</h4>
-                      <p className="text-sm text-muted-foreground mt-1">Secured $5M to expand our product offerings and grow our engineering team</p>
+                      <h4 className="font-medium">Industry Solutions</h4>
+                      <p className="text-sm text-muted-foreground mt-1">Developing targeted solutions for specific industry challenges and opportunities</p>
                     </div>
                   </div>
                 </div>
