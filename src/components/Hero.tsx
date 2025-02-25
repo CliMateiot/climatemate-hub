@@ -1,0 +1,88 @@
+
+import { ArrowRight } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+
+interface HeroProps {
+  title: string;
+  subtitle: string;
+  ctaText?: string;
+  ctaLink?: string;
+  imageUrl?: string;
+  showDecorations?: boolean;
+}
+
+const Hero = ({
+  title,
+  subtitle,
+  ctaText = "Learn More",
+  ctaLink = "#",
+  imageUrl = "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+  showDecorations = true,
+}: HeroProps) => {
+  return (
+    <div className="relative overflow-hidden h-screen max-h-[800px] min-h-[600px] flex items-center">
+      {/* Background image with overlay */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/30 z-10"></div>
+        <img
+          src={imageUrl}
+          alt="Hero background"
+          className="w-full h-full object-cover"
+          loading="eager"
+        />
+      </div>
+
+      {/* Decorative elements */}
+      {showDecorations && (
+        <>
+          <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary/20 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
+        </>
+      )}
+
+      {/* Content */}
+      <div className="container relative z-20">
+        <div className="max-w-3xl animate-fade-in">
+          <span className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
+            Next-Gen IoT Solutions
+          </span>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight text-balance text-shadow-sm">
+            {title}
+          </h1>
+          <p className="text-lg md:text-xl text-white/80 mb-8 max-w-xl leading-relaxed">
+            {subtitle}
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Button
+              size="lg"
+              className="group"
+              asChild
+            >
+              <a href={ctaLink}>
+                {ctaText}
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </a>
+            </Button>
+            <Button
+              variant="outline"
+              size="lg"
+              className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20"
+              asChild
+            >
+              <a href="/contact">Contact Us</a>
+            </Button>
+          </div>
+        </div>
+      </div>
+
+      {/* Scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 animate-bounce hidden md:block">
+        <div className="w-8 h-12 rounded-full border-2 border-white/30 flex justify-center pt-2">
+          <div className="w-1 h-2 bg-white/80 rounded-full animate-float"></div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Hero;
