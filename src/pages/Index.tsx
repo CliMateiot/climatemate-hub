@@ -134,20 +134,17 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Blog Section with Real Content */}
+      {/* Blog Section with Updated Heading and Without View All Posts Button */}
       <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
         <div className="container px-4 mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center mb-16">
             <div>
               <span className="text-primary font-semibold tracking-wider uppercase text-sm mb-2 block">CliMate Insights</span>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Latest from Our Blog</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">Latest from IoT World</h2>
               <p className="text-muted-foreground max-w-2xl">
                 Stay updated with the latest trends and innovations in the IoT industry from CliMate experts.
               </p>
             </div>
-            <Button variant="outline" className="mt-4 md:mt-0 border-primary text-primary hover:bg-primary/10" asChild>
-              <a href="/blog">View All Posts</a>
-            </Button>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -223,7 +220,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* New Vision Section - Replacing previous Startup Section */}
+      {/* New Vision Section - Modified with Button Removed */}
       <section className="py-24 bg-gradient-to-r from-gray-50 to-white">
         <div className="container px-4 mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -271,12 +268,6 @@ const Index = () => {
                   </p>
                 </div>
               </div>
-              
-              <Button className="mt-8 group" asChild>
-                <a href="/about">
-                  Learn More About Our Vision <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </a>
-              </Button>
             </div>
             
             <div className="relative">
