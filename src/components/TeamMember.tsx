@@ -1,17 +1,83 @@
 
-import { LinkedinIcon, TwitterIcon, GlobeIcon }
+import React from 'react';
+import { Linkedin, Twitter, Globe } from 'lucide-react';
 
-If there's knowledge, context or custom instructions you want to include in every edit in this project, set it below.
+interface TeamMemberProps {
+  name: string;
+  role: string;
+  bio: string;
+  imageUrl: string;
+  socialLinks?: {
+    linkedin?: string;
+    twitter?: string;
+    website?: string;
+  };
+}
 
-<lov-actions>
-<lov-knowledge>
-</lov-actions>
+const TeamMember: React.FC<TeamMemberProps> = ({
+  name,
+  role,
+  bio,
+  imageUrl,
+  socialLinks = {}
+}) => {
+  return (
+    <div className="flex flex-col items-center p-6 space-y-4 bg-white rounded-lg shadow-md hover-scale">
+      <div className="relative w-32 h-32 overflow-hidden rounded-full border-2 border-primary/20">
+        <img 
+          src={imageUrl} 
+          alt={`${name}, ${role}`} 
+          className="object-cover w-full h-full"
+        />
+      </div>
+      
+      <div className="text-center space-y-2">
+        <h3 className="text-xl font-bold text-gray-800">{name}</h3>
+        <p className="text-sm font-medium text-primary">{role}</p>
+        <p className="text-sm text-gray-600 text-balance">{bio}</p>
+      </div>
+      
+      {(socialLinks.linkedin || socialLinks.twitter || socialLinks.website) && (
+        <div className="flex space-x-4 pt-2">
+          {socialLinks.linkedin && (
+            <a 
+              href={socialLinks.linkedin} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-primary transition-colors"
+              aria-label={`${name}'s LinkedIn profile`}
+            >
+              <Linkedin size={20} />
+            </a>
+          )}
+          
+          {socialLinks.twitter && (
+            <a 
+              href={socialLinks.twitter} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-primary transition-colors"
+              aria-label={`${name}'s Twitter profile`}
+            >
+              <Twitter size={20} />
+            </a>
+          )}
+          
+          {socialLinks.website && (
+            <a 
+              href={socialLinks.website} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-primary transition-colors"
+              aria-label={`${name}'s website`}
+            >
+              <Globe size={20} />
+            </a>
+          )}
+        </div>
+      )}
+    </div>
+  );
+};
 
-Given the requirement for a CMS and robust security, integrating Supabase for user authentication, content management, and data storage is highly recommended.  You can use the Supabase menu on the top right to connect your project to Supabase.
-<lov-actions>
-<lov-message-prompt message="Tell me more about Supabase">Learn more about Supabase</lov-message-prompt>
-</lov-actions>
-
-<lov-actions>
-<lov-link url="https://docs.lovable.dev/">Visit docs</lov-link>
-</lov-actions>
+export default TeamMember;
