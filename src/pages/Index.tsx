@@ -1,5 +1,5 @@
 
-import { ArrowRight, BarChart2, Cloud, Shield, Zap, MessageCircle } from "lucide-react";
+import { ArrowRight, BarChart2, Cloud, Shield, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import Hero from "@/components/Hero";
@@ -12,8 +12,8 @@ const Index = () => {
       <Hero 
         title="CliMate: Smart IoT Solutions for a Connected World"
         subtitle="Providing cutting-edge IoT technology that helps businesses monitor, analyze, and optimize their operations in real-time."
-        ctaText="Explore Solutions"
-        ctaLink="#solutions"
+        ctaText="Contact Us"
+        ctaLink="/contact"
         imageUrl="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
       />
 
@@ -28,7 +28,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Feature Card 1 */}
             <Card className="p-6 hover-scale border-l-4 border-l-primary shadow-lg">
               <div className="h-12 w-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
@@ -38,11 +38,6 @@ const Index = () => {
               <p className="text-muted-foreground mb-4">
                 Seamlessly connect your devices to CliMate's secure cloud platform for real-time data processing and storage.
               </p>
-              <Button variant="link" className="p-0 h-auto" asChild>
-                <a href="/solutions/cloud-connectivity" className="flex items-center text-primary">
-                  Learn more <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
-              </Button>
             </Card>
 
             {/* Feature Card 2 */}
@@ -54,11 +49,6 @@ const Index = () => {
               <p className="text-muted-foreground mb-4">
                 Transform raw data into actionable insights with CliMate's advanced analytics and visualization tools.
               </p>
-              <Button variant="link" className="p-0 h-auto" asChild>
-                <a href="/solutions/data-analytics" className="flex items-center text-primary">
-                  Learn more <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
-              </Button>
             </Card>
 
             {/* Feature Card 3 */}
@@ -70,11 +60,6 @@ const Index = () => {
               <p className="text-muted-foreground mb-4">
                 Protect your IoT infrastructure with CliMate's enterprise-grade security measures and compliance protocols.
               </p>
-              <Button variant="link" className="p-0 h-auto" asChild>
-                <a href="/solutions/security" className="flex items-center text-primary">
-                  Learn more <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
-              </Button>
             </Card>
           </div>
         </div>
@@ -91,7 +76,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Industry Card 1 */}
             <div className="relative overflow-hidden rounded-lg h-64 group hover-scale shadow-xl">
               <img 
@@ -102,9 +87,6 @@ const Index = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
                 <h3 className="text-xl font-bold text-white mb-2">Manufacturing</h3>
                 <p className="text-white/80 mb-4">Optimize production processes and reduce downtime with CliMate</p>
-                <Button variant="outline" size="sm" className="w-fit bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20">
-                  View Case Studies
-                </Button>
               </div>
             </div>
 
@@ -118,9 +100,6 @@ const Index = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
                 <h3 className="text-xl font-bold text-white mb-2">Healthcare</h3>
                 <p className="text-white/80 mb-4">Enhance patient care with CliMate's IoT monitoring solutions</p>
-                <Button variant="outline" size="sm" className="w-fit bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20">
-                  View Case Studies
-                </Button>
               </div>
             </div>
 
@@ -134,9 +113,6 @@ const Index = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
                 <h3 className="text-xl font-bold text-white mb-2">Agriculture</h3>
                 <p className="text-white/80 mb-4">CliMate helps you monitor crops and automate irrigation systems</p>
-                <Button variant="outline" size="sm" className="w-fit bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20">
-                  View Case Studies
-                </Button>
               </div>
             </div>
           </div>
@@ -161,7 +137,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Blog Preview Section */}
+      {/* Blog Section with Real Content */}
       <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
         <div className="container px-4 mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center mb-16">
@@ -177,64 +153,70 @@ const Index = () => {
             </Button>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Blog Card 1 */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Blog 1: Real Content */}
             <Card className="overflow-hidden hover-scale shadow-lg">
               <div className="h-48 overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                  alt="The Future of IoT" 
+                  alt="The Future of IoT in Smart Cities" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-6">
-                <div className="text-sm text-muted-foreground mb-2">June 12, 2023 • CliMate Research</div>
+                <div className="text-sm text-muted-foreground mb-2">June 3, 2023 • IoT Development</div>
                 <h3 className="text-xl font-bold mb-2">The Future of IoT in Smart Cities</h3>
-                <p className="text-muted-foreground mb-4">Exploring how CliMate's IoT technologies are transforming urban environments...</p>
+                <p className="text-muted-foreground mb-4">
+                  Smart cities represent one of the most transformative applications of IoT technology. From traffic management to waste collection, IoT sensors are creating more efficient urban environments.
+                </p>
                 <Button variant="link" className="p-0 h-auto" asChild>
-                  <a href="/blog/future-of-iot" className="flex items-center text-primary">
+                  <a href="/blog/future-of-iot-in-smart-cities" className="flex items-center text-primary">
                     Read More <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
               </div>
             </Card>
 
-            {/* Blog Card 2 */}
+            {/* Blog 2: Real Content */}
             <Card className="overflow-hidden hover-scale shadow-lg">
               <div className="h-48 overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1563770660941-10a63261de61?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                  alt="Data Security" 
+                  alt="Security Challenges in IoT" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-6">
-                <div className="text-sm text-muted-foreground mb-2">May 28, 2023 • CliMate Security</div>
-                <h3 className="text-xl font-bold mb-2">Enhancing Data Security in IoT Networks</h3>
-                <p className="text-muted-foreground mb-4">Best practices for securing your CliMate IoT infrastructure against emerging threats...</p>
+                <div className="text-sm text-muted-foreground mb-2">May 17, 2023 • Security</div>
+                <h3 className="text-xl font-bold mb-2">Addressing Security Challenges in IoT Networks</h3>
+                <p className="text-muted-foreground mb-4">
+                  As IoT networks expand, so do security concerns. Learn about the latest encryption protocols and security measures that CliMate implements to protect your connected devices.
+                </p>
                 <Button variant="link" className="p-0 h-auto" asChild>
-                  <a href="/blog/data-security" className="flex items-center text-primary">
+                  <a href="/blog/security-challenges-in-iot" className="flex items-center text-primary">
                     Read More <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
               </div>
             </Card>
 
-            {/* Blog Card 3 */}
+            {/* Blog 3: Real Content */}
             <Card className="overflow-hidden hover-scale shadow-lg">
               <div className="h-48 overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1580982327559-c1c2ac94d310?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                  alt="AI Integration" 
+                  alt="AI and IoT Integration" 
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="p-6">
-                <div className="text-sm text-muted-foreground mb-2">April 15, 2023 • CliMate AI</div>
-                <h3 className="text-xl font-bold mb-2">AI and IoT: A Powerful Combination</h3>
-                <p className="text-muted-foreground mb-4">How CliMate's artificial intelligence is enhancing IoT capabilities and driving innovation...</p>
+                <div className="text-sm text-muted-foreground mb-2">April 22, 2023 • Innovation</div>
+                <h3 className="text-xl font-bold mb-2">Integrating AI with IoT: The Next Frontier</h3>
+                <p className="text-muted-foreground mb-4">
+                  The combination of artificial intelligence and IoT is creating unprecedented opportunities for businesses. Discover how CliMate is leading this integration to deliver predictive insights.
+                </p>
                 <Button variant="link" className="p-0 h-auto" asChild>
-                  <a href="/blog/ai-and-iot" className="flex items-center text-primary">
+                  <a href="/blog/ai-iot-integration" className="flex items-center text-primary">
                     Read More <ArrowRight className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
@@ -244,25 +226,109 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-24 bg-gradient-to-r from-white to-gray-50">
+      {/* New Startup Section - Replacing Statistics */}
+      <section className="py-24 bg-gradient-to-r from-gray-50 to-white">
         <div className="container px-4 mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div className="p-6 rounded-lg shadow-lg bg-white hover-scale">
-              <div className="text-4xl font-bold text-primary mb-2">500+</div>
-              <p className="text-muted-foreground">CliMate Clients Worldwide</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+              <span className="text-primary font-semibold tracking-wider uppercase text-sm mb-2 block">Why Choose CliMate</span>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Innovating at the Edge of IoT Technology</h2>
+              <p className="text-muted-foreground mb-6">
+                As a pioneering startup in the IoT space, CliMate brings fresh perspectives and innovative solutions to complex business challenges. Our team of experts combines deep technical knowledge with creative problem-solving to deliver IoT systems that truly transform operations.
+              </p>
+              
+              <div className="space-y-4">
+                <div className="flex items-start">
+                  <div className="h-6 w-6 bg-primary/10 rounded-full flex items-center justify-center mr-3 mt-1">
+                    <div className="h-3 w-3 bg-primary rounded-full"></div>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    <span className="font-medium text-foreground">Rapid Deployment:</span> Our modular approach allows for quick implementation and validation
+                  </p>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="h-6 w-6 bg-primary/10 rounded-full flex items-center justify-center mr-3 mt-1">
+                    <div className="h-3 w-3 bg-primary rounded-full"></div>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    <span className="font-medium text-foreground">Cost-Effective Solutions:</span> Designed with startups and SMEs in mind
+                  </p>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="h-6 w-6 bg-primary/10 rounded-full flex items-center justify-center mr-3 mt-1">
+                    <div className="h-3 w-3 bg-primary rounded-full"></div>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    <span className="font-medium text-foreground">Scalable Architecture:</span> Grows with your business from MVP to enterprise solution
+                  </p>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="h-6 w-6 bg-primary/10 rounded-full flex items-center justify-center mr-3 mt-1">
+                    <div className="h-3 w-3 bg-primary rounded-full"></div>
+                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    <span className="font-medium text-foreground">Dedicated Support Team:</span> Personalized customer service throughout your IoT journey
+                  </p>
+                </div>
+              </div>
+              
+              <Button className="mt-8 group" asChild>
+                <a href="/about">
+                  Learn About Our Team <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </a>
+              </Button>
             </div>
-            <div className="p-6 rounded-lg shadow-lg bg-white hover-scale">
-              <div className="text-4xl font-bold text-primary mb-2">10M+</div>
-              <p className="text-muted-foreground">Connected CliMate Devices</p>
-            </div>
-            <div className="p-6 rounded-lg shadow-lg bg-white hover-scale">
-              <div className="text-4xl font-bold text-primary mb-2">99.9%</div>
-              <p className="text-muted-foreground">CliMate Uptime Guarantee</p>
-            </div>
-            <div className="p-6 rounded-lg shadow-lg bg-white hover-scale">
-              <div className="text-4xl font-bold text-primary mb-2">24/7</div>
-              <p className="text-muted-foreground">CliMate Technical Support</p>
+            
+            <div className="relative">
+              <div className="bg-primary/5 rounded-2xl p-6 md:p-8 relative z-10">
+                <h3 className="text-xl font-semibold mb-6">Our Startup Journey</h3>
+                <div className="space-y-8">
+                  <div className="flex">
+                    <div className="flex-shrink-0 w-16 text-center">
+                      <div className="h-10 w-10 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
+                        <span className="font-semibold">2021</span>
+                      </div>
+                      <div className="h-full w-0.5 bg-primary/20 mx-auto mt-2"></div>
+                    </div>
+                    <div className="ml-4">
+                      <h4 className="font-medium">Founded in Silicon Valley</h4>
+                      <p className="text-sm text-muted-foreground mt-1">CliMate was established by a team of IoT enthusiasts and industry veterans</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex">
+                    <div className="flex-shrink-0 w-16 text-center">
+                      <div className="h-10 w-10 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
+                        <span className="font-semibold">2022</span>
+                      </div>
+                      <div className="h-full w-0.5 bg-primary/20 mx-auto mt-2"></div>
+                    </div>
+                    <div className="ml-4">
+                      <h4 className="font-medium">First Major Client</h4>
+                      <p className="text-sm text-muted-foreground mt-1">Successfully deployed our IoT solution for a leading manufacturing company</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex">
+                    <div className="flex-shrink-0 w-16 text-center">
+                      <div className="h-10 w-10 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
+                        <span className="font-semibold">2023</span>
+                      </div>
+                    </div>
+                    <div className="ml-4">
+                      <h4 className="font-medium">Series A Funding</h4>
+                      <p className="text-sm text-muted-foreground mt-1">Secured $5M to expand our product offerings and grow our engineering team</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Decorative Elements */}
+              <div className="absolute top-6 right-6 h-24 w-24 bg-primary/10 rounded-full blur-2xl -z-10"></div>
+              <div className="absolute bottom-12 left-12 h-32 w-32 bg-blue-500/10 rounded-full blur-2xl -z-10"></div>
             </div>
           </div>
         </div>
