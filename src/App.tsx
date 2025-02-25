@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Privacy from "./pages/Privacy";
+import ChatBox from "./components/ChatBox";
 
 const queryClient = new QueryClient();
 
@@ -26,4 +27,12 @@ const App = () => (
           <Route path="/blog" element={<NotFound />} />
           <Route path="/blog/:slug" element={<NotFound />} />
           <Route path="/contact" element={<NotFound />} />
-          <Route
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <ChatBox />
+      </BrowserRouter>
+    </TooltipProvider>
+  </QueryClientProvider>
+);
+
+export default App;
