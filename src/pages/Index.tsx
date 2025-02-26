@@ -12,7 +12,7 @@ const Index = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <Hero 
-        title="CliMate: Make your home smarter easily"
+        title="CliMate: because making your home smart is cooler"
         subtitle="Transform your air conditioner into a smart device with our affordable, easy-to-install adapter. Control temperature, set schedules, and save energy from your smartphone."
         ctaText="Get Started"
         ctaLink="#chat"
