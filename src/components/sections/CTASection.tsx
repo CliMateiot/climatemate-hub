@@ -24,10 +24,23 @@ const CTASection = () => {
           >
             Contact Us
           </Button>
+          <Link to="/about">
+            <Button 
+              variant="secondary" 
+              size="lg" 
+              className="bg-white text-primary hover:bg-white/90"
+            >
+              Learn More
+            </Button>
+          </Link>
         </div>
         
         <div className="max-w-2xl mx-auto mb-12">
           <h3 className="text-xl font-semibold mb-4">CliMate IoT Solutions</h3>
+          <p className="text-white/80">
+            Experience the future of connected technology with our innovative IoT platform.
+            We help businesses optimize operations, reduce costs, and drive sustainable growth.
+          </p>
         </div>
         
         <div className="mt-8">
