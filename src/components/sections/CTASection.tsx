@@ -15,9 +15,6 @@ const CTASection = () => {
         
         <div className="max-w-2xl mx-auto mb-12">
           <h3 className="text-xl font-semibold mb-4">CliMate IoT Solutions</h3>
-          <p className="text-white/80 mb-2">123 Tech Boulevard, San Francisco, CA 94105</p>
-          <p className="text-white/80 mb-2">Email: info@climate-iot.com</p>
-          <p className="text-white/80">Phone: +1 (555) 123-4567</p>
         </div>
         
         <div className="mt-8">
