@@ -11,7 +11,7 @@ const CTASection = () => {
   };
 
   return (
-    <section className="py-24 bg-primary text-white">
+    <section className="py-24 bg-primary text-white relative">
       <div className="container px-4 mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Upgrade Your Air Conditioner?</h2>
         <div className="flex justify-center mb-12">
@@ -25,7 +25,7 @@ const CTASection = () => {
           </Button>
         </div>
         
-        <div className="max-w-2xl mx-auto mb-12">
+        <div className="max-w-2xl mx-auto mb-16">
           <h3 className="text-xl font-semibold mb-4">CliMate Smart Home Solutions</h3>
           <p className="text-white/80">
             Transform your home into a smart living space without expensive renovations or replacements.
@@ -35,10 +35,10 @@ const CTASection = () => {
       </div>
       
       {/* Privacy Policy link at the bottom of the page */}
-      <div className="absolute bottom-4 w-full text-center">
+      <div className="w-full text-center py-3 mt-8 border-t border-white/10">
         <a 
           href="/privacy" 
-          className="text-sm text-white/70 hover:text-white transition-colors"
+          className="text-sm text-white hover:underline font-medium"
         >
           Privacy Policy
         </a>
