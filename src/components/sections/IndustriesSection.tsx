@@ -15,8 +15,8 @@ const IndustriesSection = () => {
           {/* Industry Card 1 */}
           <div className="relative overflow-hidden rounded-lg h-64 group hover-scale shadow-xl">
             <img 
-              src="https://images.unsplash.com/photo-1565108391729-a55b5728ecad?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-              alt="Manufacturing" 
+              src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+              alt="Manufacturing Automation" 
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
