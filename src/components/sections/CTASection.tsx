@@ -1,6 +1,5 @@
 
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 
 const CTASection = () => {
   const handleContactClick = () => {
@@ -15,24 +14,15 @@ const CTASection = () => {
     <section className="py-24 bg-primary text-white">
       <div className="container px-4 mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Upgrade Your Air Conditioner?</h2>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+        <div className="flex justify-center mb-12">
           <Button 
-            variant="outline" 
+            variant="secondary" 
             size="lg" 
-            className="border-white text-white hover:bg-white/10"
+            className="bg-white text-primary hover:bg-white/90 font-bold shadow-lg"
             onClick={handleContactClick}
           >
             Contact Us
           </Button>
-          <Link to="/about">
-            <Button 
-              variant="secondary" 
-              size="lg" 
-              className="bg-white text-primary hover:bg-white/90"
-            >
-              Learn More
-            </Button>
-          </Link>
         </div>
         
         <div className="max-w-2xl mx-auto mb-12">
@@ -42,15 +32,16 @@ const CTASection = () => {
             Our affordable adapters make existing appliances smarter, starting with your air conditioner.
           </p>
         </div>
-        
-        <div className="mt-8">
-          <Link 
-            to="/privacy" 
-            className="inline-block text-lg font-bold py-3 px-6 bg-white/10 hover:bg-white/20 rounded-md transition-colors border border-white/20"
-          >
-            Privacy Policy
-          </Link>
-        </div>
+      </div>
+      
+      {/* Privacy Policy link at the bottom of the page */}
+      <div className="absolute bottom-4 w-full text-center">
+        <a 
+          href="/privacy" 
+          className="text-sm text-white/70 hover:text-white transition-colors"
+        >
+          Privacy Policy
+        </a>
       </div>
     </section>
   );
