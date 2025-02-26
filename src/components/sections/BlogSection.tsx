@@ -20,8 +20,8 @@ const BlogSection = () => {
           <Card className="overflow-hidden hover-scale shadow-lg">
             <div className="h-48 overflow-hidden">
               <img 
-                src="/lovable-uploads/a2c1fcd9-12dc-44c4-b6f8-c4e86a2ce19c.png" 
-                alt="Energy efficiency security lock on keyboard" 
+                src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b" 
+                alt="Person holding blue light bulb symbolizing energy saving" 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -38,8 +38,8 @@ const BlogSection = () => {
           <Card className="overflow-hidden hover-scale shadow-lg">
             <div className="h-48 overflow-hidden">
               <img 
-                src="/lovable-uploads/a2c1fcd9-12dc-44c4-b6f8-c4e86a2ce19c.png" 
-                alt="IoT edge computing diagram showing smart home connectivity" 
+                src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
+                alt="Colorful code on computer monitor representing smart home app interface" 
                 className="w-full h-full object-cover object-center"
               />
             </div>
@@ -56,8 +56,8 @@ const BlogSection = () => {
           <Card className="overflow-hidden hover-scale shadow-lg">
             <div className="h-48 overflow-hidden">
               <img 
-                src="/lovable-uploads/a2c1fcd9-12dc-44c4-b6f8-c4e86a2ce19c.png" 
-                alt="Technical diagrams and formulas representing smart home complexity" 
+                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
+                alt="Person using laptop, representing beginner-friendly smart home setup" 
                 className="w-full h-full object-cover"
               />
             </div>
