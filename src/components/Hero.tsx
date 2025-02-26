@@ -39,7 +39,6 @@ const Hero = ({
           className="w-full h-full object-cover object-center"
           loading="eager"
           fetchpriority="high"
-          style={{ imageRendering: 'high-quality' }}
         />
       </div>
 
