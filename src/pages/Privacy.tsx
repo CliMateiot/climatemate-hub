@@ -119,16 +119,8 @@ const Privacy = () => {
             <section>
               <h2 className="text-xl font-semibold mb-4">9. Contact Us</h2>
               <p className="text-muted-foreground">
-                If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:
+                If you have any questions or concerns about this Privacy Policy or our data practices, please contact us.
               </p>
-              <div className="mt-4 p-4 bg-gray-50 rounded-md">
-                <p className="text-muted-foreground">
-                  <strong>CliMate Data Protection Team</strong><br />
-                  Email: privacy@climate-iot.com<br />
-                  Address: 123 Tech Boulevard, San Francisco, CA 94105<br />
-                  Phone: +1 (555) 123-4567
-                </p>
-              </div>
             </section>
           </div>
         </div>
