@@ -1,6 +1,4 @@
 
-import { ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
 const BlogSection = () => {
@@ -33,11 +31,6 @@ const BlogSection = () => {
               <p className="text-muted-foreground mb-4">
                 The rollout of 5G networks globally is transforming IoT capabilities with ultra-low latency and massive device connectivity. Learn how businesses are leveraging this technology for mission-critical applications.
               </p>
-              <Button variant="link" className="p-0 h-auto" asChild>
-                <a href="/blog/5g-iot-revolution" className="flex items-center text-primary">
-                  Read More <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
-              </Button>
             </div>
           </Card>
 
@@ -45,7 +38,7 @@ const BlogSection = () => {
           <Card className="overflow-hidden hover-scale shadow-lg">
             <div className="h-48 overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1592664858934-30c404b88b8a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                src="/lovable-uploads/cd63e3c3-35de-4117-8d8a-4a07d829f16c.png" 
                 alt="Edge computing servers" 
                 className="w-full h-full object-cover"
               />
@@ -56,11 +49,6 @@ const BlogSection = () => {
               <p className="text-muted-foreground mb-4">
                 As IoT data volumes explode, edge computing is becoming essential for real-time processing and reduced bandwidth usage. Discover how CliMate's edge solutions are helping companies process data closer to the source.
               </p>
-              <Button variant="link" className="p-0 h-auto" asChild>
-                <a href="/blog/edge-computing-iot" className="flex items-center text-primary">
-                  Read More <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
-              </Button>
             </div>
           </Card>
 
@@ -79,11 +67,6 @@ const BlogSection = () => {
               <p className="text-muted-foreground mb-4">
                 Quantum computing is poised to transform IoT security with unprecedented encryption capabilities. Learn about quantum-resistant algorithms and how early adopters are preparing their IoT infrastructure.
               </p>
-              <Button variant="link" className="p-0 h-auto" asChild>
-                <a href="/blog/quantum-computing-iot-security" className="flex items-center text-primary">
-                  Read More <ArrowRight className="ml-2 h-4 w-4" />
-                </a>
-              </Button>
             </div>
           </Card>
         </div>
