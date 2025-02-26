@@ -20,8 +20,8 @@ const BlogSection = () => {
           <Card className="overflow-hidden hover-scale shadow-lg">
             <div className="h-48 overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                alt="Air conditioner with energy savings display" 
+                src="/lovable-uploads/a2c1fcd9-12dc-44c4-b6f8-c4e86a2ce19c.png" 
+                alt="Energy efficiency security lock on keyboard" 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -38,9 +38,9 @@ const BlogSection = () => {
           <Card className="overflow-hidden hover-scale shadow-lg">
             <div className="h-48 overflow-hidden">
               <img 
-                src="/lovable-uploads/16c4ea73-93a0-496e-87d9-e8a555022441.png" 
-                alt="Renter-friendly smart home setup" 
-                className="w-full h-full object-cover"
+                src="/lovable-uploads/a2c1fcd9-12dc-44c4-b6f8-c4e86a2ce19c.png" 
+                alt="IoT edge computing diagram showing smart home connectivity" 
+                className="w-full h-full object-cover object-center"
               />
             </div>
             <div className="p-6">
@@ -56,8 +56,8 @@ const BlogSection = () => {
           <Card className="overflow-hidden hover-scale shadow-lg">
             <div className="h-48 overflow-hidden">
               <img 
-                src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                alt="Smart home beginner setup" 
+                src="/lovable-uploads/a2c1fcd9-12dc-44c4-b6f8-c4e86a2ce19c.png" 
+                alt="Technical diagrams and formulas representing smart home complexity" 
                 className="w-full h-full object-cover"
               />
             </div>
