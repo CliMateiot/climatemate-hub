@@ -16,7 +16,7 @@ const Hero = ({
   subtitle,
   ctaText = "Learn More",
   ctaLink = "#",
-  imageUrl = "https://images.unsplash.com/photo-1558002038-bb0237f4b4ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+  imageUrl = "/lovable-uploads/af4ae794-15d4-4737-a24c-0e97b4338f1b.png",
   showDecorations = true,
 }: HeroProps) => {
   const handleContactClick = (e: React.MouseEvent) => {
