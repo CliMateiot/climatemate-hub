@@ -16,7 +16,7 @@ const Index = () => {
         subtitle="Transform your air conditioner into a smart device with our affordable, easy-to-install adapter. Control temperature, set schedules, and save energy from your smartphone."
         ctaText="Get Started"
         ctaLink="#chat"
-        imageUrl="https://images.unsplash.com/photo-1721322800607-8c38375eef04?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+        imageUrl="https://images.unsplash.com/photo-1558002038-bb0237f4b4ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
       />
 
       {/* Features Section */}
