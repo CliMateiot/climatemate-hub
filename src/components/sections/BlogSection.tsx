@@ -38,8 +38,8 @@ const BlogSection = () => {
           <Card className="overflow-hidden hover-scale shadow-lg">
             <div className="h-48 overflow-hidden">
               <img 
-                src="/lovable-uploads/3f418e12-b2f9-4a47-a3b2-0d746f4c6426.png" 
-                alt="Edge computing servers" 
+                src="/lovable-uploads/16c4ea73-93a0-496e-87d9-e8a555022441.png" 
+                alt="Edge computing diagram showing IoT edge computing architecture" 
                 className="w-full h-full object-cover"
               />
             </div>
