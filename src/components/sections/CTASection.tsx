@@ -11,7 +11,9 @@ const CTASection = () => {
           Contact our team today to learn how CliMate's IoT solutions can help your business thrive in the digital age.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          {/* Contact Us button removed */}
+          <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+            Contact Us
+          </Button>
         </div>
         <div className="mt-12 text-white/60 text-sm">
           <Link to="/privacy" className="hover:text-white underline">Privacy Policy</Link>
