@@ -26,7 +26,7 @@ const BlogSection = () => {
               />
             </div>
             <div className="p-6">
-              <div className="text-sm text-muted-foreground mb-2">May 15, 2023 • Connectivity</div>
+              <div className="text-sm text-muted-foreground mb-2">Connectivity</div>
               <h3 className="text-xl font-bold mb-2">How 5G Is Revolutionizing IoT Deployments</h3>
               <p className="text-muted-foreground mb-4">
                 The rollout of 5G networks globally is transforming IoT capabilities with ultra-low latency and massive device connectivity. Learn how businesses are leveraging this technology for mission-critical applications.
@@ -38,13 +38,13 @@ const BlogSection = () => {
           <Card className="overflow-hidden hover-scale shadow-lg">
             <div className="h-48 overflow-hidden">
               <img 
-                src="/lovable-uploads/cd63e3c3-35de-4117-8d8a-4a07d829f16c.png" 
+                src="/lovable-uploads/3f418e12-b2f9-4a47-a3b2-0d746f4c6426.png" 
                 alt="Edge computing servers" 
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="p-6">
-              <div className="text-sm text-muted-foreground mb-2">June 7, 2023 • Technology</div>
+              <div className="text-sm text-muted-foreground mb-2">Technology</div>
               <h3 className="text-xl font-bold mb-2">Edge Computing: The Future of IoT Data Processing</h3>
               <p className="text-muted-foreground mb-4">
                 As IoT data volumes explode, edge computing is becoming essential for real-time processing and reduced bandwidth usage. Discover how CliMate's edge solutions are helping companies process data closer to the source.
@@ -62,7 +62,7 @@ const BlogSection = () => {
               />
             </div>
             <div className="p-6">
-              <div className="text-sm text-muted-foreground mb-2">April 28, 2023 • Innovation</div>
+              <div className="text-sm text-muted-foreground mb-2">Innovation</div>
               <h3 className="text-xl font-bold mb-2">Quantum Computing's Impact on IoT Security</h3>
               <p className="text-muted-foreground mb-4">
                 Quantum computing is poised to transform IoT security with unprecedented encryption capabilities. Learn about quantum-resistant algorithms and how early adopters are preparing their IoT infrastructure.
