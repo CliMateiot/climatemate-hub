@@ -3,12 +3,25 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const CTASection = () => {
+  const handleContactClick = () => {
+    // Trigger chat box to open
+    const chatBoxButton = document.querySelector('.chat-toggle-button') as HTMLButtonElement;
+    if (chatBoxButton) {
+      chatBoxButton.click();
+    }
+  };
+
   return (
     <section className="py-24 bg-primary text-white">
       <div className="container px-4 mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Business with CliMate?</h2>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <Button variant="outline" size="lg" className="border-white text-white hover:bg-white/10">
+          <Button 
+            variant="outline" 
+            size="lg" 
+            className="border-white text-white hover:bg-white/10"
+            onClick={handleContactClick}
+          >
             Contact Us
           </Button>
         </div>
