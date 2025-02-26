@@ -38,7 +38,7 @@ const Hero = ({
           alt="Hero background"
           className="w-full h-full object-cover object-center"
           loading="eager"
-          fetchpriority="high"
+          fetchPriority="high"
         />
       </div>
 
