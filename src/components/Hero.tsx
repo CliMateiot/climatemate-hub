@@ -19,6 +19,15 @@ const Hero = ({
   imageUrl = "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
   showDecorations = true,
 }: HeroProps) => {
+  const handleContactClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    // Trigger chat box to open
+    const chatBoxButton = document.querySelector('.chat-toggle-button') as HTMLButtonElement;
+    if (chatBoxButton) {
+      chatBoxButton.click();
+    }
+  };
+
   return (
     <div className="relative overflow-hidden h-screen max-h-[800px] min-h-[600px] flex items-center">
       {/* Background image with overlay */}
@@ -56,20 +65,10 @@ const Hero = ({
             <Button
               size="lg"
               className="group"
-              asChild
+              onClick={handleContactClick}
             >
-              <a href={ctaLink}>
-                {ctaText}
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </a>
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20"
-              asChild
-            >
-              <a href="/contact">Contact Us</a>
+              {ctaText}
+              <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
           </div>
         </div>

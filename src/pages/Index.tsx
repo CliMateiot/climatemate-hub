@@ -15,7 +15,7 @@ const Index = () => {
         title="CliMate: Smart IoT Solutions for a Connected World"
         subtitle="Providing cutting-edge IoT technology that helps businesses monitor, analyze, and optimize their operations in real-time."
         ctaText="Contact Us"
-        ctaLink="/contact"
+        ctaLink="#chat"
         imageUrl="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
       />
 

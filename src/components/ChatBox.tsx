@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { MessageCircle, X, Send, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
@@ -12,6 +12,24 @@ const ChatBox = () => {
   const [name, setName] = useState('');
   const [step, setStep] = useState<'contact' | 'chat'>('contact');
   const { toast } = useToast();
+
+  useEffect(() => {
+    // Handle hash-based navigation for direct chat opening
+    if (window.location.hash === '#chat') {
+      setIsOpen(true);
+    }
+
+    // Add event listener for custom events to open chat
+    const handleOpenChat = () => {
+      setIsOpen(true);
+    };
+
+    window.addEventListener('openChat', handleOpenChat);
+
+    return () => {
+      window.removeEventListener('openChat', handleOpenChat);
+    };
+  }, []);
 
   const toggleChat = () => {
     setIsOpen(!isOpen);
@@ -50,7 +68,7 @@ const ChatBox = () => {
       {/* Chat toggle button */}
       <Button
         onClick={toggleChat}
-        className="fixed bottom-6 right-6 h-14 w-14 rounded-full bg-primary hover:bg-primary/90 shadow-xl"
+        className="fixed bottom-6 right-6 h-14 w-14 rounded-full bg-primary hover:bg-primary/90 shadow-xl chat-toggle-button"
       >
         {isOpen ? <X size={24} /> : <MessageCircle size={24} />}
       </Button>
