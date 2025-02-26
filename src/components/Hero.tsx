@@ -16,7 +16,7 @@ const Hero = ({
   subtitle,
   ctaText = "Learn More",
   ctaLink = "#",
-  imageUrl = "https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
+  imageUrl = "https://images.unsplash.com/photo-1721322800607-8c38375eef04?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80",
   showDecorations = true,
 }: HeroProps) => {
   const handleContactClick = (e: React.MouseEvent) => {
@@ -53,7 +53,7 @@ const Hero = ({
       <div className="container relative z-20">
         <div className="max-w-3xl animate-fade-in">
           <span className="inline-block bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-6 backdrop-blur-sm">
-            Next-Gen IoT Solutions
+            Smart Home Upgrades
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight text-balance text-shadow-sm">
             {title}

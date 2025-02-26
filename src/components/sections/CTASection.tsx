@@ -14,7 +14,7 @@ const CTASection = () => {
   return (
     <section className="py-24 bg-primary text-white">
       <div className="container px-4 mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Business with CliMate?</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Upgrade Your Air Conditioner?</h2>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
           <Button 
             variant="outline" 
@@ -36,10 +36,10 @@ const CTASection = () => {
         </div>
         
         <div className="max-w-2xl mx-auto mb-12">
-          <h3 className="text-xl font-semibold mb-4">CliMate IoT Solutions</h3>
+          <h3 className="text-xl font-semibold mb-4">CliMate Smart Home Solutions</h3>
           <p className="text-white/80">
-            Experience the future of connected technology with our innovative IoT platform.
-            We help businesses optimize operations, reduce costs, and drive sustainable growth.
+            Transform your home into a smart living space without expensive renovations or replacements.
+            Our affordable adapters make existing appliances smarter, starting with your air conditioner.
           </p>
         </div>
         

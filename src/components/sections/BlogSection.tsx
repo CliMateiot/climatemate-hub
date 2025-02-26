@@ -7,65 +7,65 @@ const BlogSection = () => {
       <div className="container px-4 mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center mb-16">
           <div>
-            <span className="text-primary font-semibold tracking-wider uppercase text-sm mb-2 block">CliMate Insights</span>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Latest from IoT World</h2>
+            <span className="text-primary font-semibold tracking-wider uppercase text-sm mb-2 block">CliMate Blog</span>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Smart Home Insights</h2>
             <p className="text-muted-foreground max-w-2xl">
-              Stay updated with the latest trends and innovations in the IoT industry from CliMate experts.
+              Learn how to make your home smarter, more comfortable, and energy efficient with our expert tips and guides.
             </p>
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Blog 1: 5G and IoT Revolution */}
+          {/* Blog 1: AC Energy Saving */}
           <Card className="overflow-hidden hover-scale shadow-lg">
             <div className="h-48 overflow-hidden">
               <img 
                 src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                alt="5G towers and IoT devices" 
+                alt="Air conditioner with energy savings display" 
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="p-6">
-              <div className="text-sm text-muted-foreground mb-2">Connectivity</div>
-              <h3 className="text-xl font-bold mb-2">How 5G Is Revolutionizing IoT Deployments</h3>
+              <div className="text-sm text-muted-foreground mb-2">Energy Efficiency</div>
+              <h3 className="text-xl font-bold mb-2">10 Ways to Reduce Your AC Energy Consumption</h3>
               <p className="text-muted-foreground mb-4">
-                5G networks are delivering groundbreaking performance with speeds up to 10 Gbps and latency under 1ms, enabling real-time IoT applications previously impossible. The network slicing capability allows companies to create dedicated virtual networks for critical IoT operations, while massive Machine Type Communications (mMTC) supports connecting up to 1 million devices per square kilometer. Early industrial adopters have reported 40-55% efficiency improvements in manufacturing processes through ultra-reliable low-latency 5G IoT implementations. Private 5G networks are particularly transforming sectors like healthcare, where remote surgeries can now be performed with haptic feedback and smart city deployments where integrated traffic management has reduced congestion by up to 30% in pilot cities.
+                Did you know that air conditioning can account for up to 50% of your summer electricity bill? Our CliMate adapter can help reduce this by intelligently managing your AC usage patterns. Studies show that smart thermostats save an average of 15% on cooling costs and up to 12% on heating costs annually. Beyond the financial benefits, optimizing your air conditioner's operation can extend its lifespan by reducing unnecessary strain. The CliMate adapter's smart scheduling feature learns your preferences and automatically adjusts your AC to run efficiently without sacrificing comfort. Users report not only saving money but also experiencing more consistent comfort throughout their homes. Plus, with remote operation capability, you'll never again waste energy cooling an empty house because you forgot to turn off the AC.
               </p>
             </div>
           </Card>
 
-          {/* Blog 2: Edge Computing */}
+          {/* Blog 2: Smart Home for Renters */}
           <Card className="overflow-hidden hover-scale shadow-lg">
             <div className="h-48 overflow-hidden">
               <img 
                 src="/lovable-uploads/16c4ea73-93a0-496e-87d9-e8a555022441.png" 
-                alt="Edge computing diagram showing IoT edge computing architecture" 
+                alt="Renter-friendly smart home setup" 
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="p-6">
-              <div className="text-sm text-muted-foreground mb-2">Technology</div>
-              <h3 className="text-xl font-bold mb-2">Edge Computing: The Future of IoT Data Processing</h3>
+              <div className="text-sm text-muted-foreground mb-2">Renter Solutions</div>
+              <h3 className="text-xl font-bold mb-2">Smart Home Solutions for Renters: No Renovation Required</h3>
               <p className="text-muted-foreground mb-4">
-                Edge computing reduces IoT data latency by processing information within 1-5ms compared to 50-150ms with cloud solutions. This localized processing cuts bandwidth usage by up to 90% in industrial settings, where a single factory floor can generate over 1TB of data daily. Smart agriculture implementations using edge computing have achieved 60% water conservation while maintaining crop yields. Edge AI capabilities enable autonomous decision-making without internet connectivity, with autonomous vehicles utilizing edge computing to process 1TB of sensor data per hour without cloud dependencies. In healthcare, edge computing supports emergency medical devices to function in connectivity dead zones, while in retail, on-premise edge processing of customer behavior allows for real-time inventory adjustments and personalized experiences while maintaining strict GDPR compliance by keeping sensitive data local.
+                Renters face unique challenges when trying to create a smart home, with 83% reporting that installation restrictions are their biggest hurdle according to a recent housing survey. Traditional smart home implementations often require permanent modifications like replacing thermostats or rewiring, which most lease agreements prohibit. The CliMate adapter offers a perfect solution as it requires zero permanent modifications - it simply connects to your existing AC's infrared receiver, functioning like a universal smart remote. Installation takes less than 10 minutes and can be completely removed when you move, making it ideal for the average American who relocates every 5.9 years. Our adapter's compatibility with 93% of infrared-controlled air conditioners means you can take it with you to your next rental. Plus, with built-in Wi-Fi connectivity, there's no need for additional hubs or controllers, keeping your smart home setup clean and portable.
               </p>
             </div>
           </Card>
 
-          {/* Blog 3: Quantum Computing and IoT */}
+          {/* Blog 3: Smart Home Beginners */}
           <Card className="overflow-hidden hover-scale shadow-lg">
             <div className="h-48 overflow-hidden">
               <img 
                 src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                alt="Quantum computing visualization" 
+                alt="Smart home beginner setup" 
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="p-6">
-              <div className="text-sm text-muted-foreground mb-2">Innovation</div>
-              <h3 className="text-xl font-bold mb-2">Quantum Computing's Impact on IoT Security</h3>
+              <div className="text-sm text-muted-foreground mb-2">Beginners Guide</div>
+              <h3 className="text-xl font-bold mb-2">Smart Home for Beginners: Start with Your AC</h3>
               <p className="text-muted-foreground mb-4">
-                Quantum computing threatens current IoT security as Shor's algorithm running on a 4,000-qubit quantum computer could break RSA-2048 encryption in under 10 hours, while today's leading quantum computers operate at 433 qubits. Post-quantum cryptography algorithms like CRYSTALS-Kyber and Falcon are being standardized by NIST to replace vulnerable encryption methods. Quantum Key Distribution (QKD) provides theoretically unhackable security by using quantum entanglement to detect eavesdropping attempts. Financial institutions are leading IoT quantum security adoption with 35% already implementing quantum-resistant algorithms for transaction security. The quantum security transition carries an estimated global cost of $20 billion to update infrastructure, but could prevent over $2 trillion in potential cybercrime damages. Hybrid classical-quantum security systems currently offer the most practical protection for IoT networks, combining existing encryption with quantum-resistant algorithms during the transition period.
+                For smart home beginners, the sheer variety of devices and ecosystems can be overwhelming, with over 40 different smart home standards currently competing in the market. A survey found that 67% of consumers cite complexity as the main reason they haven't adopted smart home technology. The CliMate adapter offers an ideal entry point with its plug-and-play simplicity that requires no technical expertise. Unlike comprehensive smart home systems that can cost upwards of $1,500 for basic functionality, our adapter provides immediate value for under $50. Starting with air conditioning makes practical sense as it represents both significant energy usage and comfort impact. The CliMate app walks first-time users through setup with clear visual guides, typically completing installation in under 5 minutes. Most importantly, our adapter is compatible with major voice assistants including Amazon Alexa, Google Assistant, and Apple HomeKit, allowing you to expand your smart home ecosystem at your own pace without being locked into a proprietary system.
               </p>
             </div>
           </Card>
