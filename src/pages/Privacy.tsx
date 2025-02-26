@@ -20,7 +20,6 @@ const Privacy = () => {
 
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
           <h1 className="text-3xl font-bold mb-6 text-primary">CliMate Privacy Policy</h1>
-          <p className="text-sm text-muted-foreground mb-6">Last Updated: June 1, 2023</p>
 
           <div className="space-y-8">
             <section>
@@ -113,7 +112,7 @@ const Privacy = () => {
             <section>
               <h2 className="text-xl font-semibold mb-4">8. Changes to This Privacy Policy</h2>
               <p className="text-muted-foreground">
-                We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review this Privacy Policy periodically for any changes.
+                We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page. You are advised to review this Privacy Policy periodically for any changes.
               </p>
             </section>
 
