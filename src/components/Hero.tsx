@@ -16,7 +16,7 @@ const Hero = ({
   subtitle,
   ctaText = "Learn More",
   ctaLink = "#",
-  imageUrl = "/lovable-uploads/af4ae794-15d4-4737-a24c-0e97b4338f1b.png",
+  imageUrl = "/lovable-uploads/0d37d4c5-7520-42b6-82ef-f30ce632ca12.png",
   showDecorations = true,
 }: HeroProps) => {
   const handleContactClick = (e: React.MouseEvent) => {
