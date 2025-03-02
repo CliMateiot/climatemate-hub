@@ -13,7 +13,7 @@ const Index = () => {
       {/* Hero Section */}
       <Hero 
         title="CliMate: because making your home smart is cooler"
-        subtitle="Transform your air conditioner into a smart device with our affordable, easy-to-install adapter. Control temperature, set schedules, and save energy from your smartphone."
+        subtitle="Transform your air conditioner into a smart device with an affordable, easy-to-install adapter. Control temperature, set schedules, and save energy from your smartphone."
         ctaText="Get Started"
         ctaLink="#chat"
       />
