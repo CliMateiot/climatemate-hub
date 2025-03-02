@@ -28,6 +28,11 @@ const Hero = ({
     }
   };
 
+  // Split the title to style each part differently
+  const titleParts = title.split(':');
+  const productName = titleParts[0];
+  const slogan = titleParts.length > 1 ? titleParts[1] : '';
+
   return (
     <div className="relative overflow-hidden h-screen max-h-[800px] min-h-[600px] flex items-center">
       {/* Background image with overlay */}
@@ -57,7 +62,12 @@ const Hero = ({
             Smart Home Upgrades
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight text-balance text-shadow-sm">
-            {title}
+            <span className="text-primary">{productName}</span>
+            {slogan && (
+              <span className="block mt-2 text-2xl md:text-3xl lg:text-4xl italic font-light tracking-wide">
+                {slogan}
+              </span>
+            )}
           </h1>
           <p className="text-lg md:text-xl text-white/80 mb-8 max-w-xl leading-relaxed">
             {subtitle}
