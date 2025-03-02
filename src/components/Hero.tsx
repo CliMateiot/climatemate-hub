@@ -1,3 +1,4 @@
+
 import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -58,7 +59,7 @@ const Hero = ({
       <div className="container relative z-20">
         <div className="max-w-3xl animate-fade-in">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight text-balance text-shadow-sm">
-            <span className="text-primary">{productName}</span>
+            <span className="text-primary text-7xl md:text-8xl lg:text-9xl tracking-tight drop-shadow-lg">{productName}</span>
             {slogan && (
               <span className="block mt-2 text-2xl md:text-3xl lg:text-4xl italic font-light tracking-wide">
                 {slogan}
