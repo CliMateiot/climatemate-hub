@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Info, Thermometer, Users, BookOpen, MessageSquare } from 'lucide-react';
+import { Info, Thermometer, Users, BookOpen } from 'lucide-react';
 
 const QuickNavigationButtons = () => {
   const scrollToSection = (sectionId: string) => {
@@ -48,15 +48,6 @@ const QuickNavigationButtons = () => {
         >
           <BookOpen className="h-3 w-3" />
           <span>Blog</span>
-        </Button>
-        
-        <Button 
-          variant="ghost" 
-          className="flex items-center gap-1 text-sm h-8"
-          onClick={() => scrollToSection('chat')}
-        >
-          <MessageSquare className="h-3 w-3" />
-          <span>Contact</span>
         </Button>
       </div>
     </div>
