@@ -11,6 +11,11 @@ import QuickNavigationButtons from "@/components/QuickNavigationButtons";
 const Index = () => {
   return (
     <div className="min-h-screen">
+      {/* Navigation at the top */}
+      <div className="sticky top-0 z-50 bg-white/80 backdrop-blur-sm shadow-sm py-2">
+        <QuickNavigationButtons />
+      </div>
+
       {/* Hero Section */}
       <Hero 
         title="CliMate: because making your home smart is cooler"
@@ -18,9 +23,6 @@ const Index = () => {
         ctaText="Get Started"
         ctaLink="#chat"
       />
-
-      {/* Quick Navigation Buttons */}
-      <QuickNavigationButtons />
 
       {/* Features Section */}
       <div id="solutions">

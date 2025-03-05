@@ -12,50 +12,50 @@ const QuickNavigationButtons = () => {
   };
 
   return (
-    <div className="container mx-auto py-6">
-      <div className="flex flex-wrap justify-center gap-3 md:gap-4">
+    <div className="container mx-auto px-4">
+      <div className="flex flex-wrap justify-center items-center gap-2 md:gap-3">
         <Button 
-          variant="outline" 
-          className="flex items-center gap-2 shadow-sm hover:bg-primary/10 border-primary/20"
+          variant="ghost" 
+          className="flex items-center gap-1 text-sm h-8"
           onClick={() => scrollToSection('solutions')}
         >
-          <Thermometer className="h-4 w-4" />
+          <Thermometer className="h-3 w-3" />
           <span>Features</span>
         </Button>
         
         <Button 
-          variant="outline" 
-          className="flex items-center gap-2 shadow-sm hover:bg-primary/10 border-primary/20"
+          variant="ghost" 
+          className="flex items-center gap-1 text-sm h-8"
           onClick={() => scrollToSection('industries')}
         >
-          <Users className="h-4 w-4" />
+          <Users className="h-3 w-3" />
           <span>Solutions</span>
         </Button>
         
         <Button 
-          variant="outline" 
-          className="flex items-center gap-2 shadow-sm hover:bg-primary/10 border-primary/20"
+          variant="ghost" 
+          className="flex items-center gap-1 text-sm h-8"
           onClick={() => scrollToSection('vision')}
         >
-          <Info className="h-4 w-4" />
+          <Info className="h-3 w-3" />
           <span>Vision</span>
         </Button>
         
         <Button 
-          variant="outline" 
-          className="flex items-center gap-2 shadow-sm hover:bg-primary/10 border-primary/20"
+          variant="ghost" 
+          className="flex items-center gap-1 text-sm h-8"
           onClick={() => scrollToSection('blog')}
         >
-          <BookOpen className="h-4 w-4" />
+          <BookOpen className="h-3 w-3" />
           <span>Blog</span>
         </Button>
         
         <Button 
-          variant="outline" 
-          className="flex items-center gap-2 shadow-sm hover:bg-primary/10 border-primary/20"
+          variant="ghost" 
+          className="flex items-center gap-1 text-sm h-8"
           onClick={() => scrollToSection('chat')}
         >
-          <MessageSquare className="h-4 w-4" />
+          <MessageSquare className="h-3 w-3" />
           <span>Contact</span>
         </Button>
       </div>
