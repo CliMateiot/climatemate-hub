@@ -3,6 +3,7 @@ import React from 'react';
 import { ArrowLeft } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
+import ChatBox from '@/components/ChatBox';
 
 const Privacy = () => {
   const navigate = useNavigate();
@@ -125,6 +126,9 @@ const Privacy = () => {
           </div>
         </div>
       </div>
+      
+      {/* Chat Box Component */}
+      <ChatBox />
     </div>
   );
 };
