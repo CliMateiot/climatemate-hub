@@ -12,13 +12,13 @@ const QuickNavigationButtons = () => {
   };
 
   return (
-    <div className="container mx-auto px-4">
-      <div className="flex flex-wrap justify-center items-center gap-2 md:gap-3">
-        {/* Logo image on the left of "Features" button */}
+    <div className="container mx-auto px-0"> {/* remove horizontal padding */}
+      <div className="flex flex-wrap justify-start items-center gap-2 md:gap-3 py-2"> {/* justify-start for left alignment, add vertical padding for top spacing */}
+        {/* Logo image on the far left top of page */}
         <img
           src="/lovable-uploads/cc1b183b-792f-49b1-968e-a166f238f531.png"
-          alt="Cliamte-IoT Logo"
-          className="h-6 md:h-8 mr-2 object-contain"
+          alt="Climate-IoT Logo"
+          className="h-8 md:h-10 mr-3 object-contain"
           loading="lazy"
         />
         <Button
@@ -62,3 +62,4 @@ const QuickNavigationButtons = () => {
 };
 
 export default QuickNavigationButtons;
+
