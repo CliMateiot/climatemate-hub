@@ -30,7 +30,8 @@ const Navbar = () => {
     { name: 'About', path: '/about' },
     { name: 'Industries', path: '/industries' },
     { name: 'Blog', path: '/blog' },
-    { name: 'Contact', path: '/contact' },
+    { name: 'Privacy Policy', path: '/privacy' }
+    // Contact removed as per request
   ];
 
   const isActive = (path: string) => {
@@ -38,19 +39,22 @@ const Navbar = () => {
   };
 
   return (
-    <nav 
+    <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled ? 'py-3 bg-white/90 backdrop-blur-md shadow-sm' : 'py-5 bg-transparent'
       }`}
     >
       <div className="container flex items-center justify-between">
-        <Link 
-          to="/" 
-          className="flex items-center gap-2 text-xl font-bold tracking-tight" 
+        <Link
+          to="/"
+          className="flex items-center gap-2 text-xl font-bold tracking-tight"
           onClick={closeMenu}
         >
-          <span className="text-primary">Climate</span>
-          <span className="bg-primary text-white px-2 py-1 rounded text-sm">hub</span>
+          <img
+            src="/lovable-uploads/f6e9df1e-74fb-4d4b-828a-e52460ccd8e3.png"
+            alt="Cliamte-IoT logo"
+            className="h-10 w-auto"
+          />
         </Link>
 
         {/* Desktop Navigation */}
@@ -60,7 +64,7 @@ const Navbar = () => {
               key={link.name}
               to={link.path}
               className={`relative text-sm font-medium transition-colors duration-300 ${
-                isActive(link.path) 
+                isActive(link.path)
                   ? 'text-primary font-semibold after:absolute after:bottom-[-6px] after:left-0 after:h-[2px] after:w-full after:bg-primary'
                   : 'text-foreground/80 hover:text-primary link-underline'
               }`}
@@ -108,3 +112,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
